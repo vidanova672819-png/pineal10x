@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pineal 10x – Activate Your Inner Potential Naturally</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="Discover Pineal 10x, a liquid supplement with natural ingredients that supports pineal gland balance, restful sleep, and mental clarity.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --roxo: #4c2c92;
+      --roxo-escuro: #331c66;
+      --azul: #3f7ac9;
+      --bg-grad: linear-gradient(135deg, #0b0420, #1c0b3d, #081b2f);
+      --texto: #f5f5ff;
+      --cinza: #a7a7c7;
+      --card-bg: rgba(12, 8, 30, 0.96);
+      --acento: #ffd86b;
+      --erro: #f37676;
+      --radius: 18px;
+      --shadow: 0 25px 60px rgba(0,0,0,0.55);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #050313;
+      color: var(--texto);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* HEADER */
+    header {
+      background: radial-gradient(circle at top, #2e1d66 0, #050313 55%);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(12px);
+      background-color: rgba(5,3,19,0.92);
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 20% 20%, #ffd86b 0, #ff9f6b 35%, #4c2c92 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #12081f;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+    }
+    .logo-text-title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .logo-text-sub {
+      font-size: 11px;
+      color: var(--cinza);
+    }
+    .top-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffd86b, #ffb83b);
+      color: #1b102f;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+      white-space: nowrap;
+    }
+    .top-cta span.icon {
+      font-size: 16px;
+    }
+    .top-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+      filter: brightness(1.03);
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--bg-grad);
+      padding: 44px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(88,124,255,0.26) 0, transparent 60%);
+      filter: blur(3px);
+      z-index: -1;
+    }
+    .hero::before {
+      top: -160px;
+      left: -140px;
+    }
+    .hero::after {
+      bottom: -200px;
+      right: -180px;
+      background: radial-gradient(circle, rgba(255,216,107,0.28) 0, transparent 55%);
+    }
+    .hero-grid {
+      display: grid;
+      gap: 34px;
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.95fr);
+      }
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(12, 8, 30, 0.9);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 11px;
+      color: var(--cinza);
+      margin-bottom: 12px;
+    }
+    .badge span {
+      background: rgba(63,122,201,0.25);
+      color: #c4dcff;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .hero-title {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 900px) {
+      .hero-title { font-size: 38px; }
+    }
+    .hero-highlight {
+      color: var(--acento);
+    }
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--cinza);
+      max-width: 520px;
+      margin-bottom: 16px;
+    }
+    .hero-list {
+      list-style: none;
+      margin: 0 0 22px;
+      padding: 0;
+    }
+    .hero-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 8px;
+      color: #dcdcf5;
+    }
+    .hero-list li::before {
+      content: "✦";
+      font-size: 14px;
+      color: var(--acento);
+      margin-top: -1px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (min-width: 520px) {
+      .hero-cta-group {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .cta-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ffd86b, #ffb039);
+      color: #1a102d;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.65);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    .cta-primary span.icon {
+      font-size: 18px;
+    }
+    .cta-primary:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+      box-shadow: 0 22px 60px rgba(0,0,0,0.9);
+    }
+    .cta-note {
+      font-size: 11px;
+      color: var(--cinza);
+      max-width: 340px;
+    }
+
+    /* HERO IMAGE */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card {
+      background: var(--card-bg);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-main-img {
+      border-radius: 20px;
+      object-fit: cover;
+      height: 100%;
+      max-height: 380px;
+      width: 100%;
+    }
+    .hero-seal {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: radial-gradient(circle at 20% 20%, #ffd86b 0, #ff9f6b 45%, #4c2c92 100%);
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 10px;
+      color: #1a102d;
+      font-weight: 700;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 8px;
+    }
+    .hero-seal span.big {
+      font-size: 16px;
+      display: block;
+    }
+    .hero-float {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(8, 5, 22, 0.96);
+      border: 1px solid rgba(255,255,255,0.12);
+      max-width: 240px;
+      font-size: 11px;
+      color: var(--cinza);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.75);
+    }
+    .hero-float strong {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 2px;
+      font-size: 12px;
+    }
+
+    /* SECTIONS BASE */
+    section {
+      padding: 52px 0;
+      position: relative;
+    }
+    section:nth-of-type(odd) {
+      background: #070418;
+    }
+    section:nth-of-type(even) {
+      background: radial-gradient(circle at top, #10102a 0, #050313 75%);
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c2c5ff;
+      background: rgba(37, 50, 104, 0.8);
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--cinza);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* BENEFITS */
+    .benefits-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 22px;
+    }
+    @media (min-width: 768px) {
+      .benefits-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    .benefit-card {
+      background: rgba(11, 10, 30, 0.96);
+      border-radius: var(--radius);
+      padding: 16px 14px 18px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 16px 45px rgba(0,0,0,0.55);
+    }
+    .benefit-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      background: radial-gradient(circle at 20% 20%, #3f7ac9 0, #4c2c92 70%);
+      margin-bottom: 8px;
+    }
+    .benefit-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .benefit-text {
+      font-size: 12px;
+      color: var(--cinza);
+    }
+
+    /* HOW IT WORKS + INGREDIENTS */
+    .two-column {
+      display: grid;
+      gap: 26px;
+      align-items: flex-start;
+      margin-top: 26px;
+    }
+    @media (min-width: 900px) {
+      .two-column {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      }
+    }
+    .info-card {
+      background: rgba(9, 8, 26, 0.96);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 18px 48px rgba(0,0,0,0.6);
+    }
+    .info-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .info-text {
+      font-size: 13px;
+      color: var(--cinza);
+      margin-bottom: 8px;
+    }
+    .list-check {
+      list-style: none;
+      margin: 8px 0 0;
+      padding: 0;
+    }
+    .list-check li {
+      display: flex;
+      gap: 8px;
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: #d7d7f5;
+    }
+    .list-check li::before {
+      content: "➤";
+      font-size: 12px;
+      color: var(--acento);
+      margin-top: 1px;
+    }
+
+    .ingredients-grid {
+      display: grid;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--cinza);
+      margin-top: 8px;
+    }
+    .ingredient-item {
+      padding: 8px 9px;
+      border-radius: 10px;
+      background: rgba(23, 18, 54, 0.9);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .ingredient-item strong {
+      display: block;
+      font-size: 12px;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    /* STUDIES / SCIENTIFIC BASIS */
+    .study-note {
+      font-size: 11px;
+      color: var(--cinza);
+      margin-top: 8px;
+      border-left: 2px solid rgba(255,255,255,0.2);
+      padding-left: 8px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 22px;
+    }
+    @media (min-width: 768px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    .testimonial-card {
+      background: rgba(12, 9, 32, 0.96);
+      border-radius: var(--radius);
+      padding: 16px 14px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 18px 48px rgba(0,0,0,0.7);
+    }
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .testimonial-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(255,216,107,0.7);
+      flex-shrink: 0;
+    }
+    .testimonial-name {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .testimonial-tag {
+      font-size: 11px;
+      color: var(--cinza);
+    }
+    .testimonial-text {
+      font-size: 12px;
+      color: var(--cinza);
+    }
+
+    /* BONUS & GUARANTEE */
+    .bonus-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 22px;
+    }
+    @media (min-width: 768px) {
+      .bonus-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      }
+    }
+    .bonus-card {
+      background: rgba(12, 9, 34, 0.96);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 16px 45px rgba(0,0,0,0.55);
+    }
+    .bonus-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .bonus-text {
+      font-size: 12px;
+      color: var(--cinza);
+    }
+    .guarantee-badge {
+      background: radial-gradient(circle at 20% 20%, #ffd86b 0, #ffac3c 40%, #4c2c92 100%);
+      border-radius: 20px;
+      padding: 16px;
+      text-align: center;
+      color: #1a102d;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 18px 55px rgba(0,0,0,0.75);
+    }
+    .guarantee-badge span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    /* PRICING */
+    .pricing {
+      text-align: center;
+      margin-top: 26px;
+    }
+    .pricing-box {
+      display: inline-block;
+      padding: 18px 20px 20px;
+      border-radius: 20px;
+      background: rgba(9, 7, 27, 0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+      min-width: 260px;
+    }
+    .pricing-label {
+      font-size: 11px;
+      color: var(--cinza);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 4px;
+    }
+    .pricing-value {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .pricing-installments {
+      font-size: 12px;
+      color: var(--cinza);
+      margin-bottom: 10px;
+    }
+
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .faq-item {
+      background: rgba(14, 11, 35, 0.96);
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .faq-q {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .faq-a {
+      font-size: 12px;
+      color: var(--cinza);
+    }
+
+    /* FINAL CTA */
+    .cta-final {
+      padding: 48px 0 58px;
+      background: radial-gradient(circle at top, #2e2466 0, #050313 70%);
+    }
+    .cta-final-box {
+      max-width: 640px;
+      margin: 0 auto;
+      background: rgba(10, 6, 30, 0.96);
+      border-radius: 26px;
+      padding: 24px 18px 26px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 26px 70px rgba(0,0,0,0.85);
+      text-align: center;
+    }
+    .cta-final-title {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .cta-final-text {
+      font-size: 13px;
+      color: var(--cinza);
+      margin-bottom: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 18px 0 22px;
+      background: #040212;
+      text-align: center;
+      font-size: 11px;
+      color: var(--cinza);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    footer a {
+      color: #c9d9ff;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+    .legal {
+      font-size: 10px;
+      color: #8a8ab0;
+      margin-top: 6px;
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="top-bar">
+      <div class="logo">
+        <div class="logo-icon">P10</div>
+        <div>
+          <div class="logo-text-title">Pineal 10x</div>
+          <div class="logo-text-sub">Liquid supplement for well-being and mental clarity</div>
+        </div>
+      </div>
+      <a href="https://pineal10x.com/pnl10-index.php#aff=naomisoso" class="top-cta">
+        <span class="icon">🛒</span>
+        GET MY BOTTLE
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="badge">
+          <span>New batch</span> Liquid formula with selected natural ingredients
+        </div>
+        <h1 class="hero-title">
+          Activate your <span class="hero-highlight">mind's potential</span> by naturally supporting the pineal gland.
+        </h1>
+        <p class="hero-subtitle">
+          Pineal 10x is a liquid supplement with a combination of nutrients and natural extracts selected to
+          <strong>support the balance of the pineal gland</strong>, contribute to
+          <strong>more restful nights</strong>, a greater sense of well-being, and
+          <strong>mental clarity throughout the day</strong>.
+        </p>
+        <ul class="hero-list">
+          <li>Supports the healthy functioning of the pineal gland, known as the body's “biological clock”.</li>
+          <li>Helps promote more balanced sleep, essential for physical and mental recovery.</li>
+          <li>Favors focus, attention, and a sense of clarity during the day.</li>
+          <li>Liquid formula in drops, with easy daily use and potentially good absorption.</li>
+          <li>Natural-based ingredients selected from studies on well-being, sleep, and detoxification.</li>
+        </ul>
+        <div class="hero-cta-group">
+          <a href="https://pineal10x.com/pnl10-index.php#aff=naomisoso" class="cta-primary">
+            <span class="icon">✨</span>
+            I WANT TO TRY PINEAL 10X
+          </a>
+          <div class="cta-note">
+            Results may vary from person to person. Pineal 10x is a dietary supplement and does not replace
+            a balanced diet, healthy lifestyle, or medical treatments.
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <!-- ILLUSTRATIVE PRODUCT / CONCEPT IMAGE (replace with official image if available) -->
+          <img
+            src="https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Illustration of a person relaxing and meditating under a starry sky"
+            class="hero-main-img">
+          <div class="hero-seal">
+            <span class="big">10x</span>
+            Pineal
+          </div>
+          <div class="hero-float">
+            <strong>Daily use in drops</strong>
+            Can be easily incorporated into your routine, in the morning or at night, according to the manufacturer’s directions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: WHAT IS IT -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">What is Pineal 10x</div>
+      <h2 class="section-title">A liquid supplement designed for those seeking inner balance.</h2>
+      <p class="section-subtitle">
+        Pineal 10x is a liquid dietary supplement that combines vitamins and natural extracts.
+        It was developed for people who feel they need to <strong>sleep better</strong>, want more
+        <strong>mental clarity</strong>, and are interested in supporting the healthy functioning of the pineal gland.
+      </p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🌙</div>
+        <div class="benefit-title">Support for restorative sleep</div>
+        <div class="benefit-text">
+          Sleep is one of the most important pillars of well-being. Pineal 10x’s ingredients were selected to help
+          support more balanced nighttime rest, which influences energy, mood, and focus the next day.
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🧠</div>
+        <div class="benefit-title">Mental clarity and focus</div>
+        <div class="benefit-text">
+          A rested and well-nourished brain tends to respond better. The formula is designed to favor a sense of
+          clarity, attention, and productivity in everyday tasks.
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💧</div>
+        <div class="benefit-title">Practical liquid formula</div>
+        <div class="benefit-text">
+          Because it is in drops, Pineal 10x is easy to take and may have good absorption. Just follow the
+          manufacturer’s instructions to include it in your routine in a simple way.
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔄</div>
+        <div class="benefit-title">Detox support</div>
+        <div class="benefit-text">
+          Some components are associated in studies with helping eliminate residues and heavy metals. This support may
+          contribute to a more balanced internal environment.
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⚖️</div>
+        <div class="benefit-title">Physical and mental balance</div>
+        <div class="benefit-text">
+          By supporting sleep, well-being, and brain function, the supplement may help you feel more balance between
+          body and mind, always respecting individual limits.
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🛡️</div>
+        <div class="benefit-title">Based on ingredient studies</div>
+        <div class="benefit-text">
+          The selection of components takes into account research on melatonin, antioxidants, and detoxification.
+          The focus is to offer an up-to-date formula aligned with evidence on the ingredients.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS / INGREDIENTS -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">How Pineal 10x works</div>
+      <h2 class="section-title">Combined actions to support your pineal gland.</h2>
+      <p class="section-subtitle">
+        The pineal gland is connected to melatonin production and the body’s biological rhythm. Pineal 10x aims to
+        provide a combination of nutrients that contribute to a <strong>favorable environment for balance</strong>,
+        always as support and never as a replacement for medical follow-up.
+      </p>
+    </div>
+
+    <div class="two-column">
+      <div class="info-card">
+        <div class="info-title">1. Detox support</div>
+        <p class="info-text">
+          Natural-based ingredients in the formula are related in studies to helping eliminate heavy metals and residues
+          that accumulate over time.
+        </p>
+        <ul class="list-check">
+          <li>Contributes to a cleaner, more balanced internal environment.</li>
+          <li>May favor overall body functioning when combined with good habits.</li>
+        </ul>
+
+        <div class="info-title" style="margin-top:14px;">2. Support for natural melatonin production</div>
+        <p class="info-text">
+          By supporting the pineal gland and relaxation, Pineal 10x nutrients help the body maintain its own natural
+          sleep cycle, which is essential for physical and mental recovery.
+        </p>
+
+        <div class="info-title" style="margin-top:14px;">3. Clarity, focus, and well-being</div>
+        <p class="info-text">
+          A routine with better sleep and a less overloaded body can lead to more energy and focus.
+          Pineal 10x acts as an ally in this process, along with nutrition, hydration, and healthy habits.
+        </p>
+
+        <p class="study-note">
+          Important: although the components are individually studied in scientific literature, the supplement
+          Pineal 10x itself is not a medication and does not claim to cure, treat, or prevent diseases. In the presence
+          of any health condition, always follow the guidance of health professionals.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-title">Main ingredients of the formula*</div>
+        <p class="info-text">
+          The complete Pineal 10x formula is detailed on the official product label. Among the natural-based ingredients
+          commonly associated with this type of supplement, we can highlight:
+        </p>
+
+        <div class="ingredients-grid">
+          <div class="ingredient-item">
+            <strong>B-complex vitamins</strong>
+            Help with energy metabolism and proper nervous system function, both important for a more active and
+            balanced mind.
+          </div>
+          <div class="ingredient-item">
+            <strong>Support minerals</strong>
+            Work together with vitamins to support cellular processes and internal balance.
+          </div>
+          <div class="ingredient-item">
+            <strong>Antioxidant plant extracts</strong>
+            May help fight free radicals and provide support for cellular protection, favoring overall health.
+          </div>
+          <div class="ingredient-item">
+            <strong>Components linked to detoxification</strong>
+            Studies suggest some plant compounds contribute to eliminating heavy metals and pollutants from the body.
+          </div>
+        </div>
+
+        <p class="study-note">
+          *Always check the official label, the manufacturer’s information, and, if in doubt, talk to your doctor or
+          nutritionist before starting any supplement.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS / SOCIAL PROOF -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">People’s experiences</div>
+      <h2 class="section-title">What users who added Pineal 10x to their routine say.</h2>
+      <p class="section-subtitle">
+        The testimonials below are illustrative examples of how the supplement may be perceived in daily life.
+        Results vary from person to person depending on body, routine, and lifestyle.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">
+            <img src="https://images.pexels.com/photos/3760852/pexels-photo-3760852.jpeg?auto=compress&cs=tinysrgb&w=400"
+                 alt="Smiling adult woman">
+          </div>
+          <div>
+            <div class="testimonial-name">Mariana S.</div>
+            <div class="testimonial-tag">32 – Busy work routine</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “I had a hard time ‘turning off’ my mind before bed. After using Pineal 10x as support, I noticed calmer nights
+          and more energy the next day.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">
+            <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400"
+                 alt="Person in a calm, relaxed environment">
+          </div>
+          <div>
+            <div class="testimonial-name">Carlos A.</div>
+            <div class="testimonial-tag">40 – Seeking focus and well-being</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “With regular use, I felt my mind was clearer throughout the day. I also started to value my sleep schedule
+          more, and that made a difference in my performance.”
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">
+            <img src="https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=400"
+                 alt="Person meditating and relaxing">
+          </div>
+          <div>
+            <div class="testimonial-name">Luciana F.</div>
+            <div class="testimonial-tag">37 – More conscious lifestyle</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “I added Pineal 10x alongside changes in my diet and light exercise. Together, they brought me more balance and
+          a sense of inner alignment.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS / GUARANTEE / PRICING -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">Safety and access</div>
+      <h2 class="section-title">Secure purchase directly from the manufacturer’s official page.</h2>
+      <p class="section-subtitle">
+        When you click the buy button, you will be taken to the <strong>official Pineal 10x page</strong>, where you can
+        choose the ideal kit, check payment options, and access all updated details of the offer.
+      </p>
+    </div>
+
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-title">Why buy from the official page?</div>
+        <p class="bonus-text">
+          • Guarantee of receiving the original product, with updated formula and label.<br>
+          • Greater security for payment and shipping information.<br>
+          • Direct support from the manufacturer’s customer service if needed.<br>
+          • Complete information on kits, promotions, and delivery times.
+        </p>
+
+        <div class="bonus-title" style="margin-top:14px;">How to use Pineal 10x</div>
+        <p class="bonus-text">
+          The directions for use are simple and described on the package. In general, it is taken in a few drops a day,
+          which can be used in the morning or at night, according to the official instructions. Always follow the label.
+        </p>
+      </div>
+
+      <div class="guarantee-badge">
+        <span>✅</span>
+        Secure purchase directly from the manufacturer.  
+        <br>
+        Check the official page for details on guarantee, returns, and customer support before placing your order.
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div class="pricing-box">
+        <div class="pricing-label">Investment in well-being</div>
+        <div class="pricing-value">Promotional kits available</div>
+        <div class="pricing-installments">
+          Prices, kit options, and any discounts are updated directly by the manufacturer on the checkout page.
+          Click the button below to see the best option for you.
+        </div>
+        <a href="https://pineal10x.com/pnl10-index.php#aff=naomisoso" class="cta-primary">
+          <span class="icon">🛒</span>
+          SEE CURRENT KITS & PRICES
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <div class="pill">FAQ</div>
+      <h2 class="section-title">Clear and objective answers before you decide.</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q">Is Pineal 10x a medication?</div>
+        <div class="faq-a">
+          No. Pineal 10x is a <strong>dietary supplement</strong>. It does not replace prescribed medications or
+          treatments. If you have any illness or take medication, talk to your doctor before using any supplement.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does it claim to cure or treat health problems?</div>
+        <div class="faq-a">
+          No. The supplement’s goal is to <strong>support overall well-being</strong>, sleep balance, and mental clarity,
+          always as a complement to a healthy lifestyle. There is no promise of curing, treating, or preventing diseases.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can anyone take it?</div>
+        <div class="faq-a">
+          It is intended for adults. Pregnant or breastfeeding women, people with chronic diseases, on continuous
+          medication, or with any specific condition should consult a doctor or nutritionist before use.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How long before I see results?</div>
+        <div class="faq-a">
+          This varies greatly from person to person, depending on the body, daily routine, and other habits
+          (diet, sleep quality, stress level, etc.). The supplement is a support, not a magic solution.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Where can I buy it safely?</div>
+        <div class="faq-a">
+          By clicking the buttons on this page, you will be taken to the <strong>official Pineal 10x checkout page</strong>.
+          There you will find payment methods, available kits, and updated information on guarantee, shipping, and
+          customer support.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-final-box">
+      <h2 class="cta-final-title">Ready to take a step toward better well-being?</h2>
+      <p class="cta-final-text">
+        If you feel you could sleep better, have more mental clarity, and take more conscious care of your routine,
+        Pineal 10x can be an important ally in this process. Click the button below to access the official page and see
+        all details before deciding.
+      </p>
+      <a href="https://pineal10x.com/pnl10-index.php#aff=naomisoso" class="cta-primary">
+        <span class="icon">👉</span>
+        GO TO THE OFFICIAL PINEAL 10X PAGE
+      </a>
+      <p class="cta-note" style="margin-top:10px;">
+        Carefully read all the manufacturer’s information and, in case of any doubts about your health, talk to a
+        qualified healthcare professional.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    © <span id="year"></span> – Independent Pineal 10x Affiliate Page.<br>
+    This is a promotional page. The purchase is made directly on the official product site.
+  </div>
+  <div class="legal">
+    Important notice: The information on this page is for informational purposes only and does not replace professional
+    medical advice. Pineal 10x is a dietary supplement, not a medication, and does not diagnose, treat, cure, or prevent
+    diseases. Results may vary from person to person. Always follow the manufacturer’s instructions and, in case of any
+    doubts, talk to your doctor or nutritionist.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
